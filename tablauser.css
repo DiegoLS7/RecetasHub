@@ -1,0 +1,157 @@
+body {
+    background-color: #fffaf6; /* Fondo suave */
+    font-family: 'Open Sans', sans-serif; /* Fuente consistente */
+}
+
+.nav-menu{
+    border-bottom: 2px solid black;
+}
+
+.navbar-brand,
+.nav-link {
+    position: relative;
+    color: black !important;
+}
+
+.nav-link.active::after {
+    content: ''; 
+    position: absolute;
+    left: 0;
+    bottom: -5px; 
+    width: 100%;
+    height: 2px; 
+    background-color: #000000; 
+  }
+  
+.btn-segundary{
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: blueviolet;
+    color: white;
+    padding: 1.0rem 1.5rem; 
+    font-size: 1.2rem;
+}
+
+
+.headertitulo {
+    margin: 0 auto;
+    width: 330px;
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.botonagregar {
+    margin-top: 50px;
+    float: right;
+}
+
+.form-control {
+    color: #17a2b8;
+    margin-bottom: 20px;
+}
+
+#search {
+    width: 420px;
+    height: 48px;
+    border: 2px solid #888;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 5px 15px;
+    background-color: #f2f2f2;
+    transition: all 0.3s ease-in-out;
+}
+
+#search:focus {
+    outline: none;
+    border-color: #0056b3;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+#search-icon {
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    font-size: 18px;
+    color: #888;
+}
+
+.input-group-text {
+    background-color: transparent;
+    border: none;
+    margin-bottom: 16px;
+}
+
+.fas.fa-search {
+    /* margin-bottom: 10px; */
+    font-size: 1.8em;
+    color: #2485d4; /* Color del icono, puedes ajustarlo a tu preferencia */
+}
+
+
+
+.filtros {
+    margin-left: 20px;
+    padding-bottom: 30px;
+}
+
+/* Estilo para la tabla */
+.table {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.table thead {
+    background-color: #17a2b8;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.table th, .table td {
+    padding: 15px;
+    vertical-align: middle;
+}
+
+.table tbody tr {
+    transition: background-color 0.3s ease-in-out;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.btn-sm {
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 0.875rem;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+    color: white;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: white;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: white;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border-color: #c3e6cb;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}

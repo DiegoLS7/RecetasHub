@@ -1,0 +1,199 @@
+.nav-menu{
+    border-bottom: 2px solid black;
+}
+
+.btn-dark{
+    float: right;
+}
+
+.btnvermas {
+  position: absolute;
+  right: 60px;
+}
+
+
+/* test */
+
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode header {
+    background-color: #1f1f1f;
+}
+
+body.dark-mode header h1 {
+    color: #ffffff;
+}
+
+body.dark-mode header p {
+    color: #bbbbbb;
+}
+
+body.dark-mode section {
+    background-color: #1f1f1f;
+}
+
+body.dark-mode section h2 {
+    color: #ffffff;
+}
+
+body.dark-mode .card {
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+body.dark-mode .card img {
+    filter: brightness(0.8);
+}
+
+/* test */
+
+.navbar-brand,
+.nav-link {
+    position: relative;
+    color: black !important;
+}
+
+.nav-link.active::after {
+    content: ''; 
+    position: absolute;
+    left: 0;
+    bottom: -5px; 
+    width: 100%;
+    height: 2px; 
+    background-color: #000000; /* Color de la línea, ajusta según sea necesario */
+  }
+
+  #toggleDarkMode {
+    position: relative;
+    z-index: 1; /* Asegura que el botón esté por encima de otros elementos si es necesario */
+}
+
+.lead {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+  font-weight: 300;
+  color: #6c757d;
+}
+
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+  
+  header {
+    background-color: #4CAF50; /* Verde suave */
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+  }
+  
+  header p {
+    font-size: 1.25rem;
+    color: #eee;
+  }
+  
+  /* Sección destacada */
+  section {
+    padding: 60px 0;
+  }
+  
+  section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #2c3e50; /* Azul oscuro */
+  }
+  
+  section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Tarjetas de recetas */
+  .card {
+      margin-bottom: 20px;
+      /* Asegúrate de que las tarjetas sean visibles */
+      opacity: 1; /* Cambiado de 0 a 1 */
+      transform: translateY(0); /* Cambiado de 20px a 0 */
+      transition: all 1.3s ease-in-out;
+  }
+  
+  .card img {
+      max-height: 200px;
+      object-fit: cover;
+  }
+  
+  .card.show {
+      /* Si usas la clase show para animación, asegúrate de que se aplique correctamente */
+      opacity: 1;
+      transform: translateY(0);
+  }
+
+
+  .footer {
+    background-color: #f8f9fa;
+    color: #6c757d;
+    border-top: 1px solid #e9ecef;
+}
+
+.footer a {
+    color: #6c757d;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer p {
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+}
+
+  
+  /* Mejora de la responsividad */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2.5rem;
+    }
+  
+    section h2 {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    header p {
+      font-size: 1rem;
+    }
+  }
+  
